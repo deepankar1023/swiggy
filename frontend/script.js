@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://127.0.0.1:8000'; // Match your FastAPI server port
+const API_BASE_URL = 'https://swiggy-98ox.onrender.com'; // Match your FastAPI server port
 
 let currentSessionId = null;
 let turnCount = 0;
