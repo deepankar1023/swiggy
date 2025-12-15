@@ -1,5 +1,7 @@
 fastapi
 uvicorn
-python-multipart  # For form data if needed (good practice)
-google-genai
+python-multipart
+google-generativeai
+google-api-core
 pydantic
+python-dotenv
