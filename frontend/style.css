@@ -1,0 +1,149 @@
+/* --- Global Styles --- */
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Playful fallback fonts */
+    background-color: #f7e8ff; /* Light, magical lavender background */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #ff6f91; /* Bright pink */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 #fff; /* Simple 3D effect */
+}
+
+/* --- Input and Control Area --- */
+#controls {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+#promptInput {
+    flex-grow: 1;
+    padding: 15px;
+    border: 3px solid #ff6f91;
+    border-radius: 10px;
+    font-size: 1.1em;
+    outline: none;
+}
+
+#startButton {
+    background-color: #00b894; /* Green start button */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px #00967d; /* 3D press effect */
+    transition: background-color 0.1s;
+}
+
+#startButton:hover {
+    background-color: #00a082;
+}
+
+#startButton:active {
+    box-shadow: 0 1px #00967d;
+    transform: translateY(3px);
+}
+
+/* --- Story Display Area --- */
+#storyContainer {
+    background-color: #ffffff;
+    border: 5px dashed #a29bfe; /* Playful dashed border */
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 90%;
+    text-align: left;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#storyContainer p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #4b4b4b;
+}
+
+/* Emphasize new story segments */
+#storyContainer p:last-child {
+    font-weight: bold;
+    color: #2d3436;
+    border-left: 5px solid #fdcb6e; /* Yellow accent on new text */
+    padding-left: 10px;
+}
+
+
+/* --- Choice Buttons --- */
+#choiceButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+}
+
+#choiceButtons button {
+    flex: 1 1 45%; /* Allows buttons to take up nearly half the width on larger screens */
+    min-width: 250px;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.1s, box-shadow 0.1s;
+    box-shadow: 0 6px #636e72;
+}
+
+/* Styling Option A (Blue) */
+#choiceA {
+    background-color: #74b9ff;
+    color: #2d3436;
+    box-shadow: 0 6px #5998d3;
+}
+
+#choiceA:hover {
+    background-color: #5998d3;
+}
+
+/* Styling Option B (Orange/Yellow) */
+#choiceB {
+    background-color: #ffeaa7;
+    color: #2d3436;
+    box-shadow: 0 6px #d3bd73;
+}
+
+#choiceB:hover {
+    background-color: #d3bd73;
+}
+
+/* Common button hover/active effects */
+#choiceButtons button:active {
+    box-shadow: 0 2px #636e72;
+    transform: translateY(4px);
+}
+
+/* --- Status Text --- */
+#status {
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #6c5ce7;
+}

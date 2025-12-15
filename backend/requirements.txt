@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+python-multipart  # For form data if needed (good practice)
+google-genai
+pydantic
